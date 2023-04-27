@@ -61,11 +61,12 @@ textarea {
   border-radius: 5px;
   background-color: #2a2b32;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, border-radius 0.3s;
 }
 
-.keyboard__btn.active {
+.keyboard__btn.animated {
   background-color: #fc8b00;
+  border-radius: 25px;
 }
 
 .keyboard__btn:hover {
