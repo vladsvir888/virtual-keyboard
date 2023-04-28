@@ -5,11 +5,13 @@ const KEYS = [
       caseDown: 'ё',
       caseUp: 'Ё',
       caseCaps: 'Ё',
+      caseShiftCaps: 'ё',
     },
     eng: {
       caseDown: '`',
       caseUp: '~',
       caseCaps: '`',
+      caseShiftCaps: '~',
     },
     data: {
       code: 'Backquote',
@@ -20,11 +22,13 @@ const KEYS = [
       caseDown: '1',
       caseUp: '!',
       caseCaps: '1',
+      caseShiftCaps: '!',
     },
     eng: {
       caseDown: '1',
       caseUp: '!',
       caseCaps: '1',
+      caseShiftCaps: '!',
     },
     data: {
       code: 'Digit1',
@@ -35,11 +39,13 @@ const KEYS = [
       caseDown: '2',
       caseUp: '"',
       caseCaps: '2',
+      caseShiftCaps: '"',
     },
     eng: {
       caseDown: '2',
       caseUp: '@',
       caseCaps: '2',
+      caseShiftCaps: '@',
     },
     data: {
       code: 'Digit2',
@@ -50,11 +56,13 @@ const KEYS = [
       caseDown: '3',
       caseUp: '№',
       caseCaps: '3',
+      caseShiftCaps: '№',
     },
     eng: {
       caseDown: '3',
       caseUp: '#',
       caseCaps: '3',
+      caseShiftCaps: '#',
     },
     data: {
       code: 'Digit3',
@@ -65,11 +73,13 @@ const KEYS = [
       caseDown: '4',
       caseUp: ';',
       caseCaps: '4',
+      caseShiftCaps: ';',
     },
     eng: {
       caseDown: '4',
       caseUp: '$',
       caseCaps: '4',
+      caseShiftCaps: '$',
     },
     data: {
       code: 'Digit4',
@@ -80,11 +90,13 @@ const KEYS = [
       caseDown: '5',
       caseUp: '%',
       caseCaps: '5',
+      caseShiftCaps: '%',
     },
     eng: {
       caseDown: '5',
       caseUp: '%',
       caseCaps: '5',
+      caseShiftCaps: '%',
     },
     data: {
       code: 'Digit5',
@@ -95,11 +107,13 @@ const KEYS = [
       caseDown: '6',
       caseUp: ':',
       caseCaps: '6',
+      caseShiftCaps: ':',
     },
     eng: {
       caseDown: '6',
       caseUp: '^',
       caseCaps: '6',
+      caseShiftCaps: '^',
     },
     data: {
       code: 'Digit6',
@@ -110,11 +124,13 @@ const KEYS = [
       caseDown: '7',
       caseUp: '?',
       caseCaps: '7',
+      caseShiftCaps: '?',
     },
     eng: {
       caseDown: '7',
       caseUp: '&',
       caseCaps: '7',
+      caseShiftCaps: '&',
     },
     data: {
       code: 'Digit7',
@@ -125,11 +141,13 @@ const KEYS = [
       caseDown: '8',
       caseUp: '*',
       caseCaps: '8',
+      caseShiftCaps: '*',
     },
     eng: {
       caseDown: '8',
       caseUp: '*',
       caseCaps: '8',
+      caseShiftCaps: '*',
     },
     data: {
       code: 'Digit8',
@@ -140,11 +158,13 @@ const KEYS = [
       caseDown: '9',
       caseUp: '(',
       caseCaps: '9',
+      caseShiftCaps: '(',
     },
     eng: {
       caseDown: '9',
       caseUp: '(',
       caseCaps: '9',
+      caseShiftCaps: '(',
     },
     data: {
       code: 'Digit9',
@@ -155,11 +175,13 @@ const KEYS = [
       caseDown: '0',
       caseUp: ')',
       caseCaps: '0',
+      caseShiftCaps: ')',
     },
     eng: {
       caseDown: '0',
       caseUp: ')',
       caseCaps: '0',
+      caseShiftCaps: ')',
     },
     data: {
       code: 'Digit0',
@@ -170,11 +192,13 @@ const KEYS = [
       caseDown: '-',
       caseUp: '_',
       caseCaps: '-',
+      caseShiftCaps: '_',
     },
     eng: {
       caseDown: '-',
       caseUp: '_',
       caseCaps: '-',
+      caseShiftCaps: '_',
     },
     data: {
       code: 'Minus',
@@ -185,11 +209,13 @@ const KEYS = [
       caseDown: '=',
       caseUp: '+',
       caseCaps: '=',
+      caseShiftCaps: '+',
     },
     eng: {
       caseDown: '=',
       caseUp: '+',
       caseCaps: '=',
+      caseShiftCaps: '+',
     },
     data: {
       code: 'Equal',
@@ -201,11 +227,13 @@ const KEYS = [
       caseDown: 'Backspace',
       caseUp: 'Backspace',
       caseCaps: 'Backspace',
+      caseShiftCaps: 'Backspace',
     },
     eng: {
       caseDown: 'Backspace',
       caseUp: 'Backspace',
       caseCaps: 'Backspace',
+      caseShiftCaps: 'Backspace',
     },
     data: {
       code: 'Backspace',
@@ -217,11 +245,13 @@ const KEYS = [
       caseDown: 'Tab',
       caseUp: 'Tab',
       caseCaps: 'Tab',
+      caseShiftCaps: 'Tab',
     },
     eng: {
       caseDown: 'Tab',
       caseUp: 'Tab',
       caseCaps: 'Tab',
+      caseShiftCaps: 'Tab',
     },
     data: {
       code: 'Tab',
@@ -232,11 +262,13 @@ const KEYS = [
       caseDown: 'й',
       caseUp: 'Й',
       caseCaps: 'Й',
+      caseShiftCaps: 'й',
     },
     eng: {
       caseDown: 'q',
       caseUp: 'Q',
       caseCaps: 'Q',
+      caseShiftCaps: 'q',
     },
     data: {
       code: 'KeyQ',
@@ -247,11 +279,13 @@ const KEYS = [
       caseDown: 'ц',
       caseUp: 'Ц',
       caseCaps: 'Ц',
+      caseShiftCaps: 'ц',
     },
     eng: {
       caseDown: 'w',
       caseUp: 'W',
       caseCaps: 'W',
+      caseShiftCaps: 'w',
     },
     data: {
       code: 'KeyW',
@@ -262,11 +296,13 @@ const KEYS = [
       caseDown: 'у',
       caseUp: 'У',
       caseCaps: 'У',
+      caseShiftCaps: 'у',
     },
     eng: {
       caseDown: 'e',
       caseUp: 'E',
       caseCaps: 'E',
+      caseShiftCaps: 'e',
     },
     data: {
       code: 'KeyE',
@@ -277,11 +313,13 @@ const KEYS = [
       caseDown: 'к',
       caseUp: 'К',
       caseCaps: 'К',
+      caseShiftCaps: 'к',
     },
     eng: {
       caseDown: 'r',
       caseUp: 'R',
       caseCaps: 'R',
+      caseShiftCaps: 'r',
     },
     data: {
       code: 'KeyR',
@@ -292,11 +330,13 @@ const KEYS = [
       caseDown: 'е',
       caseUp: 'Е',
       caseCaps: 'Е',
+      caseShiftCaps: 'е',
     },
     eng: {
       caseDown: 't',
       caseUp: 'T',
       caseCaps: 'T',
+      caseShiftCaps: 't',
     },
     data: {
       code: 'KeyT',
@@ -307,11 +347,13 @@ const KEYS = [
       caseDown: 'н',
       caseUp: 'Н',
       caseCaps: 'Н',
+      caseShiftCaps: 'н',
     },
     eng: {
       caseDown: 'y',
       caseUp: 'Y',
       caseCaps: 'Y',
+      caseShiftCaps: 'y',
     },
     data: {
       code: 'KeyY',
@@ -322,11 +364,13 @@ const KEYS = [
       caseDown: 'г',
       caseUp: 'Г',
       caseCaps: 'Г',
+      caseShiftCaps: 'г',
     },
     eng: {
       caseDown: 'u',
       caseUp: 'U',
       caseCaps: 'U',
+      caseShiftCaps: 'u',
     },
     data: {
       code: 'KeyU',
@@ -337,11 +381,13 @@ const KEYS = [
       caseDown: 'ш',
       caseUp: 'Ш',
       caseCaps: 'Ш',
+      caseShiftCaps: 'ш',
     },
     eng: {
       caseDown: 'i',
       caseUp: 'I',
       caseCaps: 'I',
+      caseShiftCaps: 'i',
     },
     data: {
       code: 'KeyI',
@@ -352,11 +398,13 @@ const KEYS = [
       caseDown: 'щ',
       caseUp: 'Щ',
       caseCaps: 'Щ',
+      caseShiftCaps: 'щ',
     },
     eng: {
       caseDown: 'o',
       caseUp: 'O',
       caseCaps: 'O',
+      caseShiftCaps: 'o',
     },
     data: {
       code: 'KeyO',
@@ -367,11 +415,13 @@ const KEYS = [
       caseDown: 'з',
       caseUp: 'З',
       caseCaps: 'З',
+      caseShiftCaps: 'з',
     },
     eng: {
       caseDown: 'p',
       caseUp: 'P',
       caseCaps: 'P',
+      caseShiftCaps: 'p',
     },
     data: {
       code: 'KeyP',
@@ -382,11 +432,13 @@ const KEYS = [
       caseDown: 'х',
       caseUp: 'Х',
       caseCaps: 'Х',
+      caseShiftCaps: 'х',
     },
     eng: {
       caseDown: '[',
       caseUp: '{',
       caseCaps: '[',
+      caseShiftCaps: '{',
     },
     data: {
       code: 'BracketLeft',
@@ -397,11 +449,13 @@ const KEYS = [
       caseDown: 'ъ',
       caseUp: 'Ъ',
       caseCaps: 'Ъ',
+      caseShiftCaps: 'ъ',
     },
     eng: {
       caseDown: ']',
       caseUp: '}',
       caseCaps: ']',
+      caseShiftCaps: '}',
     },
     data: {
       code: 'BracketRight',
@@ -412,11 +466,13 @@ const KEYS = [
       caseDown: '\\',
       caseUp: '/',
       caseCaps: '\\',
+      caseShiftCaps: '/',
     },
     eng: {
       caseDown: '\\',
       caseUp: '|',
       caseCaps: '\\',
+      caseShiftCaps: '|',
     },
     data: {
       code: 'Backslash',
@@ -427,11 +483,13 @@ const KEYS = [
       caseDown: 'Del',
       caseUp: 'Del',
       caseCaps: 'Del',
+      caseShiftCaps: 'Del',
     },
     eng: {
       caseDown: 'Del',
       caseUp: 'Del',
       caseCaps: 'Del',
+      caseShiftCaps: 'Del',
     },
     data: {
       code: 'Delete',
@@ -444,11 +502,13 @@ const KEYS = [
       caseDown: 'CapsLock',
       caseUp: 'CapsLock',
       caseCaps: 'CapsLock',
+      caseShiftCaps: 'CapsLock',
     },
     eng: {
       caseDown: 'CapsLock',
       caseUp: 'CapsLock',
       caseCaps: 'CapsLock',
+      caseShiftCaps: 'CapsLock',
     },
     data: {
       code: 'CapsLock',
@@ -459,11 +519,13 @@ const KEYS = [
       caseDown: 'ф',
       caseUp: 'Ф',
       caseCaps: 'Ф',
+      caseShiftCaps: 'ф',
     },
     eng: {
       caseDown: 'a',
       caseUp: 'A',
       caseCaps: 'A',
+      caseShiftCaps: 'a',
     },
     data: {
       code: 'KeyA',
@@ -474,11 +536,13 @@ const KEYS = [
       caseDown: 'ы',
       caseUp: 'Ы',
       caseCaps: 'Ы',
+      caseShiftCaps: 'ы',
     },
     eng: {
       caseDown: 's',
       caseUp: 'S',
       caseCaps: 'S',
+      caseShiftCaps: 's',
     },
     data: {
       code: 'KeyS',
@@ -489,11 +553,13 @@ const KEYS = [
       caseDown: 'в',
       caseUp: 'В',
       caseCaps: 'В',
+      caseShiftCaps: 'в',
     },
     eng: {
       caseDown: 'd',
       caseUp: 'D',
       caseCaps: 'D',
+      caseShiftCaps: 'd',
     },
     data: {
       code: 'KeyD',
@@ -504,11 +570,13 @@ const KEYS = [
       caseDown: 'а',
       caseUp: 'А',
       caseCaps: 'А',
+      caseShiftCaps: 'а',
     },
     eng: {
       caseDown: 'f',
       caseUp: 'F',
       caseCaps: 'F',
+      caseShiftCaps: 'f',
     },
     data: {
       code: 'KeyF',
@@ -519,11 +587,13 @@ const KEYS = [
       caseDown: 'п',
       caseUp: 'П',
       caseCaps: 'П',
+      caseShiftCaps: 'п',
     },
     eng: {
       caseDown: 'g',
       caseUp: 'G',
       caseCaps: 'G',
+      caseShiftCaps: 'g',
     },
     data: {
       code: 'KeyG',
@@ -534,11 +604,13 @@ const KEYS = [
       caseDown: 'р',
       caseUp: 'Р',
       caseCaps: 'Р',
+      caseShiftCaps: 'р',
     },
     eng: {
       caseDown: 'h',
       caseUp: 'H',
       caseCaps: 'H',
+      caseShiftCaps: 'h',
     },
     data: {
       code: 'KeyH',
@@ -549,11 +621,13 @@ const KEYS = [
       caseDown: 'о',
       caseUp: 'О',
       caseCaps: 'О',
+      caseShiftCaps: 'о',
     },
     eng: {
       caseDown: 'j',
       caseUp: 'J',
       caseCaps: 'J',
+      caseShiftCaps: 'j',
     },
     data: {
       code: 'KeyJ',
@@ -564,11 +638,13 @@ const KEYS = [
       caseDown: 'л',
       caseUp: 'Л',
       caseCaps: 'Л',
+      caseShiftCaps: 'л',
     },
     eng: {
       caseDown: 'k',
       caseUp: 'K',
       caseCaps: 'K',
+      caseShiftCaps: 'k',
     },
     data: {
       code: 'KeyK',
@@ -579,11 +655,13 @@ const KEYS = [
       caseDown: 'д',
       caseUp: 'Д',
       caseCaps: 'Д',
+      caseShiftCaps: 'д',
     },
     eng: {
       caseDown: 'l',
       caseUp: 'L',
       caseCaps: 'L',
+      caseShiftCaps: 'l',
     },
     data: {
       code: 'KeyL',
@@ -594,11 +672,13 @@ const KEYS = [
       caseDown: 'ж',
       caseUp: 'Ж',
       caseCaps: 'Ж',
+      caseShiftCaps: 'ж',
     },
     eng: {
       caseDown: ';',
       caseUp: ':',
       caseCaps: ';',
+      caseShiftCaps: ':',
     },
     data: {
       code: 'Semicolon',
@@ -609,11 +689,13 @@ const KEYS = [
       caseDown: 'э',
       caseUp: 'Э',
       caseCaps: 'Э',
+      caseShiftCaps: 'э',
     },
     eng: {
       caseDown: '\'',
       caseUp: '"',
       caseCaps: '\'',
+      caseShiftCaps: '"',
     },
     data: {
       code: 'Quote',
@@ -625,11 +707,13 @@ const KEYS = [
       caseDown: 'Enter',
       caseUp: 'Enter',
       caseCaps: 'Enter',
+      caseShiftCaps: 'Enter',
     },
     eng: {
       caseDown: 'Enter',
       caseUp: 'Enter',
       caseCaps: 'Enter',
+      caseShiftCaps: 'Enter',
     },
     data: {
       code: 'Enter',
@@ -642,11 +726,13 @@ const KEYS = [
       caseDown: 'Shift',
       caseUp: 'Shift',
       caseCaps: 'Shift',
+      caseShiftCaps: 'Shift',
     },
     eng: {
       caseDown: 'Shift',
       caseUp: 'Shift',
       caseCaps: 'Shift',
+      caseShiftCaps: 'Shift',
     },
     data: {
       code: 'ShiftLeft',
@@ -657,11 +743,13 @@ const KEYS = [
       caseDown: 'я',
       caseUp: 'Я',
       caseCaps: 'Я',
+      caseShiftCaps: 'я',
     },
     eng: {
       caseDown: 'z',
       caseUp: 'Z',
       caseCaps: 'Z',
+      caseShiftCaps: 'z',
     },
     data: {
       code: 'KeyZ',
@@ -672,11 +760,13 @@ const KEYS = [
       caseDown: 'ч',
       caseUp: 'Ч',
       caseCaps: 'Ч',
+      caseShiftCaps: 'ч',
     },
     eng: {
       caseDown: 'x',
       caseUp: 'X',
       caseCaps: 'X',
+      caseShiftCaps: 'x',
     },
     data: {
       code: 'KeyX',
@@ -687,11 +777,13 @@ const KEYS = [
       caseDown: 'с',
       caseUp: 'С',
       caseCaps: 'С',
+      caseShiftCaps: 'с',
     },
     eng: {
       caseDown: 'c',
       caseUp: 'C',
       caseCaps: 'C',
+      caseShiftCaps: 'c',
     },
     data: {
       code: 'KeyC',
@@ -702,11 +794,13 @@ const KEYS = [
       caseDown: 'м',
       caseUp: 'М',
       caseCaps: 'М',
+      caseShiftCaps: 'м',
     },
     eng: {
       caseDown: 'v',
       caseUp: 'V',
       caseCaps: 'V',
+      caseShiftCaps: 'v',
     },
     data: {
       code: 'KeyV',
@@ -717,11 +811,13 @@ const KEYS = [
       caseDown: 'и',
       caseUp: 'И',
       caseCaps: 'И',
+      caseShiftCaps: 'и',
     },
     eng: {
       caseDown: 'b',
       caseUp: 'B',
       caseCaps: 'B',
+      caseShiftCaps: 'b',
     },
     data: {
       code: 'KeyB',
@@ -732,11 +828,13 @@ const KEYS = [
       caseDown: 'т',
       caseUp: 'Т',
       caseCaps: 'Т',
+      caseShiftCaps: 'т',
     },
     eng: {
       caseDown: 'n',
       caseUp: 'N',
       caseCaps: 'N',
+      caseShiftCaps: 'n',
     },
     data: {
       code: 'KeyN',
@@ -747,11 +845,13 @@ const KEYS = [
       caseDown: 'ь',
       caseUp: 'Ь',
       caseCaps: 'Ь',
+      caseShiftCaps: 'ь',
     },
     eng: {
       caseDown: 'm',
       caseUp: 'M',
       caseCaps: 'M',
+      caseShiftCaps: 'm',
     },
     data: {
       code: 'KeyM',
@@ -762,11 +862,13 @@ const KEYS = [
       caseDown: 'б',
       caseUp: 'Б',
       caseCaps: 'Б',
+      caseShiftCaps: 'б',
     },
     eng: {
       caseDown: ',',
       caseUp: '<',
       caseCaps: ',',
+      caseShiftCaps: '<',
     },
     data: {
       code: 'Comma',
@@ -777,11 +879,13 @@ const KEYS = [
       caseDown: 'ю',
       caseUp: 'Ю',
       caseCaps: 'Ю',
+      caseShiftCaps: 'ю',
     },
     eng: {
       caseDown: '.',
       caseUp: '>',
       caseCaps: '.',
+      caseShiftCaps: '>',
     },
     data: {
       code: 'Period',
@@ -792,11 +896,13 @@ const KEYS = [
       caseDown: '.',
       caseUp: ',',
       caseCaps: '.',
+      caseShiftCaps: ',',
     },
     eng: {
       caseDown: '/',
       caseUp: '?',
       caseCaps: '/',
+      caseShiftCaps: '?',
     },
     data: {
       code: 'Slash',
@@ -807,11 +913,13 @@ const KEYS = [
       caseDown: '&#8593;',
       caseUp: '&#8593;',
       caseCaps: '&#8593;',
+      caseShiftCaps: '&#8593;',
     },
     eng: {
       caseDown: '&#8593;',
       caseUp: '&#8593;',
       caseCaps: '&#8593;',
+      caseShiftCaps: '&#8593;',
     },
     data: {
       code: 'ArrowUp',
@@ -823,11 +931,13 @@ const KEYS = [
       caseDown: 'Shift',
       caseUp: 'Shift',
       caseCaps: 'Shift',
+      caseShiftCaps: 'Shift',
     },
     eng: {
       caseDown: 'Shift',
       caseUp: 'Shift',
       caseCaps: 'Shift',
+      caseShiftCaps: 'Shift',
     },
     data: {
       code: 'ShiftRight',
@@ -840,11 +950,13 @@ const KEYS = [
       caseDown: 'Ctrl',
       caseUp: 'Ctrl',
       caseCaps: 'Ctrl',
+      caseShiftCaps: 'Ctrl',
     },
     eng: {
       caseDown: 'Ctrl',
       caseUp: 'Ctrl',
       caseCaps: 'Ctrl',
+      caseShiftCaps: 'Ctrl',
     },
     data: {
       code: 'ControlLeft',
@@ -855,11 +967,13 @@ const KEYS = [
       caseDown: 'Win',
       caseUp: 'Win',
       caseCaps: 'Win',
+      caseShiftCaps: 'Win',
     },
     eng: {
       caseDown: 'Win',
       caseUp: 'Win',
       caseCaps: 'Win',
+      caseShiftCaps: 'Win',
     },
     data: {
       code: 'MetaLeft',
@@ -870,11 +984,13 @@ const KEYS = [
       caseDown: 'Alt',
       caseUp: 'Alt',
       caseCaps: 'Alt',
+      caseShiftCaps: 'Alt',
     },
     eng: {
       caseDown: 'Alt',
       caseUp: 'Alt',
       caseCaps: 'Alt',
+      caseShiftCaps: 'Alt',
     },
     data: {
       code: 'AltLeft',
@@ -886,11 +1002,13 @@ const KEYS = [
       caseDown: '',
       caseUp: '',
       caseCaps: '',
+      caseShiftCaps: '',
     },
     eng: {
       caseDown: '',
       caseUp: '',
       caseCaps: '',
+      caseShiftCaps: '',
     },
     data: {
       code: 'Space',
@@ -901,11 +1019,13 @@ const KEYS = [
       caseDown: 'Alt',
       caseUp: 'Alt',
       caseCaps: 'Alt',
+      caseShiftCaps: 'Alt',
     },
     eng: {
       caseDown: 'Alt',
       caseUp: 'Alt',
       caseCaps: 'Alt',
+      caseShiftCaps: 'Alt',
     },
     data: {
       code: 'AltRight',
@@ -916,11 +1036,13 @@ const KEYS = [
       caseDown: '&#8592;',
       caseUp: '&#8592;',
       caseCaps: '&#8592;',
+      caseShiftCaps: '&#8592;',
     },
     eng: {
       caseDown: '&#8592;',
       caseUp: '&#8592;',
       caseCaps: '&#8592;',
+      caseShiftCaps: '&#8592;',
     },
     data: {
       code: 'ArrowLeft',
@@ -931,11 +1053,13 @@ const KEYS = [
       caseDown: '&#8595;',
       caseUp: '&#8595;',
       caseCaps: '&#8595;',
+      caseShiftCaps: '&#8595;',
     },
     eng: {
       caseDown: '&#8595;',
       caseUp: '&#8595;',
       caseCaps: '&#8595;',
+      caseShiftCaps: '&#8595;',
     },
     data: {
       code: 'ArrowDown',
@@ -946,11 +1070,13 @@ const KEYS = [
       caseDown: '&#8594;',
       caseUp: '&#8594;',
       caseCaps: '&#8594;',
+      caseShiftCaps: '&#8594;',
     },
     eng: {
       caseDown: '&#8594;',
       caseUp: '&#8594;',
       caseCaps: '&#8594;',
+      caseShiftCaps: '&#8594;',
     },
     data: {
       code: 'ArrowRight',
@@ -961,11 +1087,13 @@ const KEYS = [
       caseDown: 'Ctrl',
       caseUp: 'Ctrl',
       caseCaps: 'Ctrl',
+      caseShiftCaps: 'Ctrl',
     },
     eng: {
       caseDown: 'Ctrl',
       caseUp: 'Ctrl',
       caseCaps: 'Ctrl',
+      caseShiftCaps: 'Ctrl',
     },
     data: {
       code: 'ControlRight',
@@ -982,12 +1110,14 @@ const INFO_TEXT = `
 `;
 
 const SELECTORS = {
+  btn: '.keyboard__btn',
   btn_eng: '.keyboard__btn-eng',
   btn_rus: '.keyboard__btn-rus',
   btn_item: '.keyboard__btn-item',
   btn_item_down: '.keyboard__btn-item--down',
   btn_item_up: '.keyboard__btn-item--up',
   btn_item_caps: '.keyboard__btn-item--caps',
+  btn_item_shift_caps: '.keyboard__btn-item--shift-caps',
 };
 
 const KEY_LS = 'lang_keyboard';
@@ -996,6 +1126,7 @@ const CLASSES = {
   app: 'app',
   keyboard: 'keyboard',
   animated: 'animated',
+  btn_item: 'keyboard__btn-item',
 };
 
 class Keyboard {
@@ -1027,6 +1158,9 @@ class Keyboard {
             <span class="keyboard__btn-item keyboard__btn-item--caps" hidden>
               ${key.eng.caseCaps}
             </span>
+            <span class="keyboard__btn-item keyboard__btn-item--shift-caps" hidden>
+              ${key.eng.caseShiftCaps}
+            </span>
           </span>
           <span class="keyboard__btn-rus" hidden>
             <span class="keyboard__btn-item keyboard__btn-item--down">
@@ -1037,6 +1171,9 @@ class Keyboard {
             </span>
             <span class="keyboard__btn-item keyboard__btn-item--caps" hidden>
               ${key.rus.caseCaps}
+            </span>
+            <span class="keyboard__btn-item keyboard__btn-item--shift-caps" hidden>
+              ${key.rus.caseShiftCaps}
             </span>
           </span>
         </button>
@@ -1054,6 +1191,9 @@ class Keyboard {
     this.btnsEng = this.keyboard.querySelectorAll(SELECTORS.btn_eng);
     this.btnsRus = this.keyboard.querySelectorAll(SELECTORS.btn_rus);
     this.btnItems = this.keyboard.querySelectorAll(SELECTORS.btn_item);
+    this.capsLock = this.keyboard.querySelector('[data-code="CapsLock"]');
+    this.shiftLeft = this.keyboard.querySelector('[data-code="ShiftLeft"]');
+    this.shiftRight = this.keyboard.querySelector('[data-code="ShiftRight"]');
 
     this.lang = localStorage.getItem(KEY_LS);
 
@@ -1063,6 +1203,8 @@ class Keyboard {
 
     document.addEventListener('keydown', this.keyDownHandler.bind(this));
     document.addEventListener('keyup', this.keyUpHandler.bind(this));
+    document.addEventListener('mousedown', this.mouseDownHandler.bind(this));
+    document.addEventListener('mouseup', this.mouseUpHandler.bind(this));
   }
 
   static addAnimatedClass(el) {
@@ -1096,7 +1238,12 @@ class Keyboard {
       this.toggleShift(el);
     }
 
-    if (el && code !== 'CapsLock') {
+    if (
+      el
+      && code !== 'CapsLock'
+      && code !== 'ShiftLeft'
+      && code !== 'ShiftRight'
+    ) {
       Keyboard.removeAnimatedClass(el);
     }
   }
@@ -1126,38 +1273,149 @@ class Keyboard {
       }
     }
 
-    if (el && code !== 'CapsLock') {
+    if (
+      el
+      && code !== 'CapsLock'
+      && code !== 'ShiftLeft'
+      && code !== 'ShiftRight'
+    ) {
       if (!repeat) {
         Keyboard.addAnimatedClass(el);
       }
     }
   }
 
-  toggleAttrHidden(selector) {
-    const itemsWithoutHiddenAttr = [...this.btnItems].filter((item) => !item.hasAttribute('hidden'));
+  mouseUpHandler(e) {
+    const { target } = e;
 
-    Keyboard.setAttrHidden(itemsWithoutHiddenAttr);
+    if (!target.classList.contains(CLASSES.btn_item)) return;
+
+    const parent = target.closest(SELECTORS.btn);
+
+    const { code } = parent.dataset;
+
+    if (code === 'ShiftLeft' || code === 'ShiftRight') {
+      this.toggleShift(parent);
+    }
+
+    this.textarea.focus();
+  }
+
+  mouseDownHandler(e) {
+    const { target } = e;
+
+    if (!target.classList.contains(CLASSES.btn_item)) return;
+
+    const key = target.textContent.trim();
+
+    const parent = target.closest(SELECTORS.btn);
+
+    const { code } = parent.dataset;
+
+    switch (code) {
+      case 'Backspace':
+        this.textarea.value = this.textarea.value.slice(0, -1);
+        break;
+      case 'Enter':
+        this.textarea.value += '\n';
+        break;
+      case 'Tab':
+        this.textarea.value += ' '.repeat(4);
+        break;
+      case 'Space':
+        this.textarea.value += ' '.repeat(1);
+        break;
+      case 'CapsLock':
+        this.toggleCaps(parent);
+        break;
+      case 'ShiftLeft':
+        this.toggleShift(parent);
+        break;
+      case 'ShiftRight':
+        this.toggleShift(parent);
+        break;
+      case 'ControlLeft':
+        break;
+      case 'ControlRight':
+        break;
+      case 'MetaLeft':
+        break;
+      case 'AltLeft':
+        break;
+      case 'AltRight':
+        break;
+      case 'Delete': {
+        const startPosSelection = this.textarea.selectionStart;
+        const arr = this.textarea.value.split('');
+
+        arr.splice(startPosSelection, 1);
+
+        this.textarea.value = arr.join('');
+
+        break;
+      }
+      default:
+        this.textarea.value += key;
+    }
+  }
+
+  toggleAttrHidden(selector) {
+    const itemsNotHidden = [...this.btnItems].filter((item) => !item.hasAttribute('hidden'));
+
+    Keyboard.setAttrHidden(itemsNotHidden);
 
     Keyboard.removeAttrHidden(this.keyboard.querySelectorAll(selector));
   }
 
   toggleCaps(el) {
+    if (!this.shiftLeft.classList.contains(CLASSES.animated)) {
+      if (!el.classList.contains(CLASSES.animated)) {
+        Keyboard.addAnimatedClass(el);
+
+        this.toggleAttrHidden(SELECTORS.btn_item_caps);
+      } else {
+        Keyboard.removeAnimatedClass(el);
+
+        this.toggleAttrHidden(SELECTORS.btn_item_down);
+      }
+
+      return;
+    }
+
     if (!el.classList.contains(CLASSES.animated)) {
       Keyboard.addAnimatedClass(el);
 
-      this.toggleAttrHidden(SELECTORS.btn_item_caps);
+      this.toggleAttrHidden(SELECTORS.btn_item_down);
     } else {
       Keyboard.removeAnimatedClass(el);
 
-      this.toggleAttrHidden(SELECTORS.btn_item_down);
+      this.toggleAttrHidden(SELECTORS.btn_item_caps);
     }
   }
 
   toggleShift(el) {
+    if (!this.capsLock.classList.contains(CLASSES.animated)) {
+      if (!el.classList.contains(CLASSES.animated)) {
+        Keyboard.addAnimatedClass(el);
+
+        this.toggleAttrHidden(SELECTORS.btn_item_up);
+      } else {
+        Keyboard.removeAnimatedClass(el);
+
+        this.toggleAttrHidden(SELECTORS.btn_item_down);
+      }
+
+      return;
+    }
+
     if (!el.classList.contains(CLASSES.animated)) {
-      this.toggleAttrHidden(SELECTORS.btn_item_up);
+      Keyboard.addAnimatedClass(el);
+
+      this.toggleAttrHidden(SELECTORS.btn_item_shift_caps);
     } else {
-      this.toggleAttrHidden(SELECTORS.btn_item_down);
+      Keyboard.removeAnimatedClass(el);
+
+      this.toggleAttrHidden(SELECTORS.btn_item_caps);
     }
   }
 

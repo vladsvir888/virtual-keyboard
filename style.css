@@ -37,6 +37,7 @@ textarea {
   color: inherit;
   border: 1px solid #2a2b32;
   border-radius: 5px;
+  outline: none;
 }
 
 .keyboard {
@@ -49,19 +50,27 @@ textarea {
 }
 
 .keyboard__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 50px;
-  min-height: 50px;
-  padding: 5px;
+  padding: 0;
   font-size: inherit;
   color: #fff;
   border: none;
   border-radius: 5px;
   background-color: #2a2b32;
   cursor: pointer;
+  outline: none;
   transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.keyboard__btn-item {
+  min-width: 50px;
+  min-height: 50px;
+  padding: 5px;
+}
+
+.keyboard__btn-item:not([hidden]) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .keyboard__btn.animated {
@@ -71,6 +80,11 @@ textarea {
 
 .keyboard__btn:hover {
   background-color: #fc8b00;
+}
+
+.keyboard__btn:active {
+  background-color: #fc8b00;
+  border-radius: 25px;
 }
 
 .col-2 {
