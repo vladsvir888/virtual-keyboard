@@ -1,5 +1,4 @@
 const KEYS = [
-  // 1 row
   {
     rus: {
       caseDown: 'ё',
@@ -239,7 +238,7 @@ const KEYS = [
       code: 'Backspace',
     },
   },
-  // 2 row
+
   {
     rus: {
       caseDown: 'Tab',
@@ -495,7 +494,7 @@ const KEYS = [
       code: 'Delete',
     },
   },
-  // 3 row
+
   {
     className: 'col-2',
     rus: {
@@ -719,7 +718,7 @@ const KEYS = [
       code: 'Enter',
     },
   },
-  // 4 row
+
   {
     className: 'col-2',
     rus: {
@@ -943,7 +942,7 @@ const KEYS = [
       code: 'ShiftRight',
     },
   },
-  // 5 row
+
   {
     className: 'col-2',
     rus: {
@@ -1103,8 +1102,8 @@ const KEYS = [
 
 const TITLE_TEXT = 'Виртуальная клавиатура';
 const INFO_TEXT = `
-  Клавиатура создана в операционной системе Windows 
-  <br> 
+  Клавиатура создана в операционной системе Windows
+  <br>
   <br>
   Для переключения языка комбинация: <b>левыe ctrl + alt</b>
 `;
@@ -1144,8 +1143,8 @@ class Keyboard {
 
     const str = KEYS.map((key) => (
       `
-        <button 
-          class="keyboard__btn ${key.className ?? ''}" 
+        <button
+          class="keyboard__btn ${key.className ?? ''}"
           data-code="${key.data.code}"
         >
           <span class="keyboard__btn-eng">
@@ -1227,6 +1226,119 @@ class Keyboard {
     });
   }
 
+  outputResult(code, domEl, textDomEl, repeat) {
+    switch (code) {
+      case 'Backspace': {
+        const startPosSelection = this.textarea.selectionStart;
+        const arr = this.textarea.value.split('');
+
+        if (startPosSelection !== 0) {
+          arr.splice(startPosSelection - 1, 1);
+
+          this.textarea.value = arr.join('');
+
+          this.textarea.setSelectionRange(startPosSelection - 1, startPosSelection - 1);
+        }
+
+        break;
+      }
+      case 'Enter': {
+        const startPosSelection = this.textarea.selectionStart;
+        const arr = this.textarea.value.split('');
+
+        arr.splice(startPosSelection, 0, '\n');
+
+        this.textarea.value = arr.join('');
+
+        if (startPosSelection + 1 !== this.textarea.value.length) {
+          this.textarea.setSelectionRange(startPosSelection + 1, startPosSelection + 1);
+        }
+
+        break;
+      }
+      case 'Tab': {
+        const startPosSelection = this.textarea.selectionStart;
+        const arr = this.textarea.value.split('');
+
+        arr.splice(startPosSelection, 0, '\t');
+
+        this.textarea.value = arr.join('');
+
+        if (startPosSelection + 1 !== this.textarea.value.length) {
+          this.textarea.setSelectionRange(startPosSelection + 1, startPosSelection + 1);
+        }
+
+        break;
+      }
+      case 'Space': {
+        const startPosSelection = this.textarea.selectionStart;
+        const arr = this.textarea.value.split('');
+
+        arr.splice(startPosSelection, 0, ' ');
+
+        this.textarea.value = arr.join('');
+
+        if (startPosSelection + 1 !== this.textarea.value.length) {
+          this.textarea.setSelectionRange(startPosSelection + 1, startPosSelection + 1);
+        }
+
+        break;
+      }
+      case 'CapsLock':
+        if (!repeat) {
+          this.toggleCaps(domEl);
+        }
+
+        break;
+      case 'ShiftLeft':
+        if (!repeat) {
+          this.toggleShift(domEl);
+        }
+
+        break;
+      case 'ShiftRight':
+        if (!repeat) {
+          this.toggleShift(domEl);
+        }
+
+        break;
+      case 'ControlLeft':
+        break;
+      case 'ControlRight':
+        break;
+      case 'MetaLeft':
+        break;
+      case 'AltLeft':
+        break;
+      case 'AltRight':
+        break;
+      case 'Delete': {
+        const startPosSelection = this.textarea.selectionStart;
+        const arr = this.textarea.value.split('');
+
+        arr.splice(startPosSelection, 1);
+
+        this.textarea.value = arr.join('');
+
+        this.textarea.setSelectionRange(startPosSelection, startPosSelection);
+
+        break;
+      }
+      default: {
+        const startPosSelection = this.textarea.selectionStart;
+        const arr = this.textarea.value.split('');
+
+        arr.splice(startPosSelection, 0, textDomEl);
+
+        this.textarea.value = arr.join('');
+
+        if (startPosSelection + 1 !== this.textarea.value.length) {
+          this.textarea.setSelectionRange(startPosSelection + 1, startPosSelection + 1);
+        }
+      }
+    }
+  }
+
   keyUpHandler(e) {
     e.preventDefault();
 
@@ -1246,28 +1358,28 @@ class Keyboard {
     ) {
       Keyboard.removeAnimatedClass(el);
     }
+
+    this.textarea.focus();
   }
 
   keyDownHandler(e) {
     e.preventDefault();
 
-    const { code, repeat } = e;
+    const {
+      code,
+      repeat,
+      ctrlKey,
+      metaKey,
+      altKey,
+    } = e;
 
     const el = this.keyboard.querySelector(`[data-code="${code}"]`);
 
-    if (code === 'CapsLock') {
-      if (!repeat) {
-        this.toggleCaps(el);
-      }
-    }
+    if (!el) return;
 
-    if (code === 'ShiftLeft' || code === 'ShiftRight') {
-      if (!repeat) {
-        this.toggleShift(el);
-      }
-    }
+    const elText = el.innerText;
 
-    if ((code === 'AltLeft' && (e.ctrlKey || e.metaKey)) || (code === 'ControlLeft' && e.altKey)) {
+    if ((code === 'AltLeft' && (ctrlKey || metaKey)) || (code === 'ControlLeft' && altKey)) {
       if (!repeat) {
         this.checkLangKeyboard();
       }
@@ -1283,6 +1395,8 @@ class Keyboard {
         Keyboard.addAnimatedClass(el);
       }
     }
+
+    this.outputResult(code, el, elText, repeat);
   }
 
   mouseUpHandler(e) {
@@ -1306,57 +1420,13 @@ class Keyboard {
 
     if (!target.classList.contains(CLASSES.btn_item)) return;
 
-    const key = target.textContent.trim();
+    const text = target.innerText;
 
-    const parent = target.closest(SELECTORS.btn);
+    const el = target.closest(SELECTORS.btn);
 
-    const { code } = parent.dataset;
+    const { code } = el.dataset;
 
-    switch (code) {
-      case 'Backspace':
-        this.textarea.value = this.textarea.value.slice(0, -1);
-        break;
-      case 'Enter':
-        this.textarea.value += '\n';
-        break;
-      case 'Tab':
-        this.textarea.value += ' '.repeat(4);
-        break;
-      case 'Space':
-        this.textarea.value += ' '.repeat(1);
-        break;
-      case 'CapsLock':
-        this.toggleCaps(parent);
-        break;
-      case 'ShiftLeft':
-        this.toggleShift(parent);
-        break;
-      case 'ShiftRight':
-        this.toggleShift(parent);
-        break;
-      case 'ControlLeft':
-        break;
-      case 'ControlRight':
-        break;
-      case 'MetaLeft':
-        break;
-      case 'AltLeft':
-        break;
-      case 'AltRight':
-        break;
-      case 'Delete': {
-        const startPosSelection = this.textarea.selectionStart;
-        const arr = this.textarea.value.split('');
-
-        arr.splice(startPosSelection, 1);
-
-        this.textarea.value = arr.join('');
-
-        break;
-      }
-      default:
-        this.textarea.value += key;
-    }
+    this.outputResult(code, el, text);
   }
 
   toggleAttrHidden(selector) {
@@ -1385,11 +1455,11 @@ class Keyboard {
     if (!el.classList.contains(CLASSES.animated)) {
       Keyboard.addAnimatedClass(el);
 
-      this.toggleAttrHidden(SELECTORS.btn_item_down);
+      this.toggleAttrHidden(SELECTORS.btn_item_shift_caps);
     } else {
       Keyboard.removeAnimatedClass(el);
 
-      this.toggleAttrHidden(SELECTORS.btn_item_caps);
+      this.toggleAttrHidden(SELECTORS.btn_item_up);
     }
   }
 
